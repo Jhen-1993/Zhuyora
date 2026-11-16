@@ -1,0 +1,43 @@
+/* Enchantress image -> shattered accusation -> shield sweep -> raised foot -> grounded commander. */
+#preview-daji:target{outline:2px solid #AD7E78;outline-offset:4px}
+.daji-performance{display:none;position:absolute;inset:0;isolation:isolate}
+.daji-illusion,.daji-shard{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.daji-fighter{position:absolute;inset:0;display:none;background-size:200% 200%;background-repeat:no-repeat;background-position:0 0;clip-path:inset(2px)}
+.daji-shard{display:none;z-index:4}.daji-illusion{z-index:3}
+.finale-daji[data-phase=act] .daji-performance,.finale-daji[data-phase=intro] .daji-performance{display:block}
+.finale-daji[data-phase=act] .finale-main,.finale-daji.daji-rig-ready[data-phase=intro] .finale-main{opacity:0;animation:none}
+.finale-daji[data-daji-beat=illusion] .daji-illusion{animation:daji-illusion-breathe 2.4s ease-in-out infinite alternate;filter:drop-shadow(0 0 12px #AC769970)}
+.finale-daji[data-daji-beat=shatter] .daji-illusion{display:none}
+.finale-daji[data-daji-beat=shatter] .daji-shard{display:block;animation:daji-image-shatter 1.1s cubic-bezier(.2,.6,.2,1) both}
+.finale-daji.daji-rig-ready[data-daji-beat=shatter] .daji-fighter{display:block;animation:daji-armor-emerge 1.1s ease-out both}
+.finale-daji[data-daji-beat=shield] .daji-illusion,.finale-daji[data-daji-beat=raise] .daji-illusion,.finale-daji[data-daji-beat=stomp] .daji-illusion,.finale-daji[data-daji-beat=hold] .daji-illusion{display:none}
+.finale-daji.daji-rig-ready[data-daji-beat=shield] .daji-fighter{display:block;animation:daji-shield-poses 1.5s steps(1,end) both,daji-shield-drive 1.5s ease-in-out both}
+.finale-daji.daji-rig-ready[data-daji-beat=raise] .daji-fighter{display:block;background-position:0 100%;animation:daji-stomp-windup .75s ease-in both}
+.finale-daji.daji-rig-ready[data-daji-beat=stomp] .daji-fighter{display:block;background-position:100% 100%;animation:daji-foot-impact .48s ease-out both}
+.finale-daji.daji-rig-ready[data-daji-beat=hold] .daji-fighter{display:block;background-position:100% 100%}
+/* Preserve a usable commander portrait if the motion sheet fails to load. */
+.finale-daji:not(.daji-rig-ready)[data-phase=act]:not([data-daji-beat=illusion]) .finale-main{opacity:1;animation:none}
+.daji-break-ring,.daji-shield-trail,.daji-ground-ring,.daji-dust{display:none;position:absolute;pointer-events:none}
+.daji-break-ring{inset:15%;border:3px solid #E8D2AD;border-radius:50%;z-index:5}
+.finale-daji[data-daji-beat=shatter] .daji-break-ring{display:block;animation:daji-break-pulse 1.1s ease-out both}
+.daji-shield-trail{left:38%;top:20%;width:55%;height:40%;border:5px solid #E8D2AD;border-bottom-color:transparent;border-left-color:transparent;border-radius:50%;z-index:2}
+.finale-daji[data-daji-beat=shield] .daji-shield-trail{display:block;animation:daji-shield-arc 1.5s ease-out both}
+.daji-ground-ring{left:12%;bottom:2%;width:76%;height:14%;border:4px solid #D6B781;border-radius:50%;z-index:2}
+.finale-daji[data-daji-beat=stomp] .daji-ground-ring{display:block;animation:daji-ground-impact 1.05s ease-out both}
+.daji-dust{left:45%;bottom:5%;width:8px;height:6px;background:#D6B781;border-radius:50%;z-index:4}
+.finale-daji[data-daji-beat=stomp] .daji-dust{display:block;animation:daji-dust-burst .95s ease-out both}
+.finale-daji[data-phase=act] .fx-commander-banner{opacity:0;animation:none}
+.finale-daji[data-phase=act][data-daji-beat=shield] .fx-commander-banner,.finale-daji[data-phase=act][data-daji-beat=raise] .fx-commander-banner,.finale-daji[data-phase=act][data-daji-beat=stomp] .fx-commander-banner,.finale-daji[data-phase=act][data-daji-beat=hold] .fx-commander-banner{opacity:.4;animation:commander-banner 2s ease-in-out infinite alternate}
+@keyframes daji-illusion-breathe{from{transform:translateY(1%) scale(.97)}to{transform:translateY(-1%) scale(1)}}
+@keyframes daji-image-shatter{0%{opacity:1;transform:none;filter:brightness(1.3)}20%{opacity:1}100%{opacity:0;transform:translate(var(--sx),var(--sy)) rotate(var(--sr)) scale(.65);filter:brightness(1)}}
+@keyframes daji-armor-emerge{0%{opacity:0;transform:scale(.85)}35%{opacity:1;transform:scale(.94)}100%{opacity:1;transform:scale(1)}}
+@keyframes daji-break-pulse{from{opacity:.85;transform:scale(.4)}to{opacity:0;transform:scale(1.8)}}
+@keyframes daji-shield-poses{0%{background-position:0 0}32%,100%{background-position:100% 0}}
+@keyframes daji-shield-drive{0%{transform:translateX(-3%) rotate(-3deg)}30%{transform:translateX(-5%) rotate(-4deg)}50%{transform:translateX(3%) rotate(2deg)}100%{transform:none}}
+@keyframes daji-shield-arc{0%,24%{opacity:0;transform:rotate(-70deg) scale(.6)}45%{opacity:.75}100%{opacity:0;transform:rotate(50deg) scale(1.12)}}
+@keyframes daji-stomp-windup{from{transform:translateY(1%)}to{transform:translateY(-4%)}}
+@keyframes daji-foot-impact{0%{transform:translateY(-4%)}20%{transform:translateY(2%)}45%{transform:translateY(-1%)}65%,100%{transform:none}}
+@keyframes daji-ground-impact{from{opacity:.85;transform:scale(.25)}to{opacity:0;transform:scale(1.5)}}
+@keyframes daji-dust-burst{from{opacity:.85;transform:none}to{opacity:0;transform:translate(calc((var(--dust) - 3.5)*24px),calc(-16px - var(--dust)*4px)) scale(.3)}}
+.finale-daji.reduced .daji-performance{display:none!important}
+@media(prefers-reduced-motion:reduce){.daji-performance{display:none!important}}

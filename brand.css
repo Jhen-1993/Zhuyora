@@ -1,0 +1,66 @@
+/* Zhuyora: restrained, warm, editorial. Solid colors; no backdrop gradients. */
+:root{--ink:#40383C;--primary:#705B6B;--rose:#AD7E78;--lavender:#B5A3B4;--taupe:#B6A497;--muted:#6E6268;--line:#DDD2D6;--paper:#F7F2EC;--surface:#FCFAF7}
+body{background:var(--paper);color:var(--ink);font-size:15px}
+h1,h2,h3{color:var(--primary);font-weight:600}h1{letter-spacing:.02em}
+.site-header{padding-top:23px;padding-bottom:24px;gap:24px}
+.brand{display:block;max-width:calc(100% - 60px);line-height:0}
+.brand-logo{display:block;width:320px;height:106px;max-width:100%;object-fit:contain;object-position:left center}
+.help-button{color:var(--primary);border-color:var(--line);background:var(--surface)}
+.en,.small-note,.small-note .en,.audio-status,.audio-controls,.subtle-button{color:var(--muted)}
+.tabs>button{font-size:15px;font-weight:500;color:var(--muted)}
+.tabs>button[aria-selected=true]{color:var(--primary);border-color:var(--primary)}
+.tabs>button:hover{background:#EFE7EB}
+.primary{background:var(--primary);border-color:var(--primary);color:#fff;box-shadow:none}
+.primary .en{color:#fff}
+.primary:hover:enabled{background:#5D4958;border-color:#5D4958}
+.primary:disabled{background:#DDD2D6;border-color:#DDD2D6;color:#6E6268}
+.primary:disabled .en{color:#6E6268}
+.secondary{background:var(--surface);color:var(--primary);border-color:var(--line)}
+.secondary:hover,.preset:hover,.story-pick:hover{background:#EAE3EB}
+.practice-modes{background:#EDE5E5;border:1px solid var(--line);border-radius:12px;padding:4px}
+.practice-modes button{color:var(--muted)}
+.practice-modes button[aria-pressed=true]{color:var(--primary);background:var(--surface);box-shadow:0 1px 4px #40383C0D}
+.flip-card{--accent:#705B6B;--tint:#F0E2DE;border-color:#D9C7C4;box-shadow:0 3px 0 #E5D7D3;border-radius:14px}
+.flip-card:nth-child(2){--accent:#68594F;--tint:#EDE4DA;border-color:#D5C9BD;box-shadow:0 3px 0 #E3D7CB}
+.flip-card:nth-child(3){--accent:#655369;--tint:#EAE3EB;border-color:#D3C6D5;box-shadow:0 3px 0 #DED2E1}
+.flip-card:nth-child(4){--accent:#755462;--tint:#F0E7EB;border-color:#D9C8D1;box-shadow:0 3px 0 #E4D6DC}
+.card-top,.card-top .en,.listen-label,.listen-label .en,.card-inline-tip,.card-inline-tip .en{color:var(--accent)}
+.card-count{opacity:1;font-size:10px}
+.lesson-link,.lesson-link:nth-child(2n),.sound-study,.homophone-card,.collection-card,.story-word-card,.story-paper,.chapter-link,.tone-tile{background:var(--surface);border-color:var(--line);box-shadow:0 3px 12px #40383C06;border-radius:16px}
+.lesson-link:hover,.chapter-link:hover:enabled{box-shadow:0 4px 14px #40383C0C;border-color:var(--lavender)}
+.lesson-link .lesson-number,.lesson-link:nth-child(2n) .lesson-number,.lesson-link:nth-child(3n) .lesson-number,.chapter-icon{background:#EAE3EB;color:var(--primary);border-radius:12px}
+.lesson-link.done .lesson-number{background:#E6DCE5;color:#5D4958}
+.lesson-link.done:after{color:var(--primary)}
+.lesson-symbol,.word-heading strong,.assembled,.lesson-pinyin,.word-zhuyin,.pinyin,.tone-curve,.finish-flower,.earned-points,.result-spark{color:var(--primary)}
+.lesson-pinyin,.usage-pinyin,.word-zhuyin .en{color:var(--muted)}
+.game-icon{background:#EAE3EB;color:var(--primary);border-radius:22px}
+.listen-button,.sentence-listen,.word-listen{background:#EAE3EB;border-color:#D3C6D5;color:#655369}
+.listen-button .en,.sentence-listen .en,.word-listen .en{color:#655369}
+.choice{background:var(--surface);border-color:var(--line);color:var(--ink)}
+.choice.correct{background:#EAE3EB;border-color:var(--primary);color:#57465B}
+.choice.wrong{background:#F0E2DE;border-color:#986E69;color:#754F4B}
+.choice:disabled:not(.correct):not(.wrong){color:#6E6268;background:#F1E9E3}
+progress,progress::-webkit-progress-bar{background:#E6DCE3}
+progress::-webkit-progress-value{background:var(--primary)}progress::-moz-progress-bar{background:var(--primary)}
+.audio-controls input,.auto-label input,.zhuyin-toggle input{accent-color:var(--primary)}
+.audio-controls select,.chapter-select{color:var(--ink);background:var(--surface);border-color:var(--line)}
+.usage-sentence,.culture-note{background:#F1E9E3;color:var(--ink)}
+.inline-word{color:#705B6B;border-color:var(--rose)}.inline-word rt{color:var(--muted)}
+.story-chinese{color:var(--ink);line-height:2.3}.story-english .en{color:var(--muted);font-size:15px}
+.story-picker{gap:10px}.story-pick{background:var(--surface);border-color:var(--line);color:var(--ink);font-size:14px}
+.story-pick[aria-pressed=true]{border-color:var(--primary);background:#EAE3EB;color:#57465B}
+.story-pick[aria-pressed=true] .en{color:#655369}.story-pick .en{font-size:12px}
+.book-cover{background:#EAE3EB;border-color:#D3C6D5;color:var(--primary)}
+.book-cover .en,.book-cover small,.book-name .en{color:var(--muted)}
+.book-cover:disabled{opacity:1;background:#F1E9E3;border-color:var(--line);color:var(--muted)}
+.daily-note,.chapter-state,.chapter-state .en,.back-button,.story-source,.story-source .en,.journey-stats .en{color:var(--muted)}
+.story-source a,.story-source a .en{color:var(--primary)}
+.story-source summary{padding:8px 0}.story-source summary .en{display:inline;margin-left:8px}
+.collection-card h2{font-size:24px}.journey-route h1{font-size:32px}.journey-route h1 .en{font-size:16px;line-height:1.5}
+.sentence-answer{background:#F0E9EF;border-color:var(--lavender)}.word-token{background:var(--surface);border-color:var(--line);box-shadow:0 2px 0 #DDD2D6;color:var(--ink)}
+.word-token.chosen{background:#EAE3EB;border-color:var(--lavender);box-shadow:0 2px 0 #D3C6D5}
+.meaning-prompt .en{color:var(--primary)}
+dialog{background:var(--surface);border-color:var(--line);color:var(--ink)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--primary);outline-offset:4px}
+@media(max-width:600px){.brand-logo{width:255px;height:85px}.site-header{padding:17px 24px 18px}.tabs>button{min-width:0;flex:1;padding-left:8px;padding-right:8px;font-size:14px}.journey-route h1{font-size:27px}.collection-card h2{font-size:21px}.story-picker{gap:8px}.story-pick{font-size:14px}.story-pick .en{font-size:11px}}
+@media(max-width:380px){.brand-logo{width:220px;height:74px}.site-header{gap:12px;padding-left:18px;padding-right:18px}}
