@@ -3306,10 +3306,10 @@ for(const [i,world] of STORY_WORLDS.entries()){world.routeIndex=i+1;const localW
 // Character edition 2026-11-16
 (()=>{
  const daji=STORY_WORLDS.find(w=>w.id==='daji');
- daji.art='assets/daji-dual-seal.png';daji.character='妲己・妖姬與將軍';daji.characterEn='Daji, Enchantress & Commander';
+ daji.art='assets/daji-shadow-seal.png';daji.character='妲己・妖姬與將軍';daji.characterEn='Daji, Enchantress & Commander';
  daji.sourceExtra={label:'將軍妲己的研究背景',en:'Research behind commander Daji',url:'https://research.sinica.edu.tw/ancient-china-shang-woman-daji/'};
- daji.sourceNote+=' 收藏圖並列小說妖姬與學術推論啟發的女將重塑，呈現同一人物的不同敘事。';
- daji.sourceNoteEn+=' The collectible pairs the fictional enchantress with a scholarly-inspired commander, showing two different narratives about Daji.';
+ daji.sourceNote+=' 收藏圖以前景小說妖姬與身後的將軍黑影，表現學術推論啟發的女將重塑，呈現同一人物的不同敘事。';
+ daji.sourceNoteEn+=' The collectible places the fictional enchantress before a scholarly-inspired commander silhouette, showing two different narratives about Daji.';
  const change=STORY_WORLDS.find(w=>w.id==='change');
  change.sourceNote='採用逢蒙逼取仙藥、嫦娥為保護仙藥而奔月的傳說版本。此情節與《淮南子》簡短記述不同；結尾思念為教學改寫。';
  change.sourceNoteEn='This retelling uses the legend in which Feng Meng demands the elixir and Chang’e takes it to keep it from him. It differs from the brief Huainanzi account. The ending about longing is adapted for learners.';

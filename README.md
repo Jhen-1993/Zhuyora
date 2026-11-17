@@ -51,7 +51,6 @@ Serve this folder with a static HTTP server and open index.html. No build, backe
 
 ## 完整覺醒更新 / Full awakening update
 
-- 開啟 preview.html 可看全部 11 場演出；預覽不授予印記，也不改學習進度。
 - 原有三枚起始印記＋書閣三關：小語寶甦醒；舊 version:1 存檔保留。
 - 本版固定九枚印記＋短句聽力、故事排序、詞語造句三關：完整語寶新裝與專屬結局。每關三題，完成一關即儲存；未完成關卡重進會從該關第一題開始。
 - 可重聽、提示、重試，不計時、不扣分。日後新增故事不增加本版九枚目標，不取消已取得完整形態。
@@ -60,12 +59,11 @@ Serve this folder with a static HTTP server and open index.html. No build, backe
 - 角色聲線：女媧 Yating，較慢而低；后羿 Zhiwei，沉穩；嫦娥 Hanhan，較快；妲己 Yating，較堅定。合成音不能等同專業角色配音，尚需人工試聽。
 - 新測試涵蓋 9 題終章、存檔遷移、未來加書、重聽失敗／重試、錯誤排序可修正、重播與重載、11 場預覽及完整台詞等待。實際動畫與手機視覺仍待原生瀏覽器確認。
 
-The original three seals and three library quests awaken little Yubao. Collect the fixed nine seals in this edition and complete three further challenges for the full outfit and finale. Legacy progress is retained; future books do not move the goal. Preview all 11 performances in preview.html without changing learning progress.
 
 ## 妲己雙形象印記 / Daji’s dual portrait
 
-演出依序為：妖姬與狐影登場 →「禍國妖姬？」→「可笑！」與幻象碎裂 → 將軍揮盾 → 抬腳蓄勢、踏地與鉞柄落地 → 研究介紹 → 妖姬與將軍並列的完整印記。主要動作依台詞段落觸發；靜音或音檔錯誤會完成無聲動作，不會卡在中途。四姿勢原畫配合獨立碎片、揮盾殘影及落地塵圈；不是影片或嘴型同步動畫。
+演出依序為：妖姬與狐影登場 →「禍國妖姬？」→「可笑！」與幻象碎裂 → 將軍揮盾 → 抬腳蓄勢、踏地與鉞柄落地 → 研究介紹 → 彩色妖姬在前、將軍黑影在後的完整印記。主要動作依台詞段落觸發；靜音或音檔錯誤會完成無聲動作，不會卡在中途。四姿勢原畫配合獨立碎片、揮盾殘影及落地塵圈；不是影片或嘴型同步動畫。
 
-The finale starts with the fictional enchantress. Her rebuttal shatters the illusion, revealing the armored commander sweeping her shield, lifting her foot and stamping down while planting the axe shaft. The final collectible deliberately preserves both forms side by side. The scholarly background is shown after the performance; reduced-motion mode presents a static dual portrait and optional audio. Existing chapter IDs, seals and saved progress are unchanged.
+The finale starts with the fictional enchantress. Her rebuttal shatters the illusion, revealing the armored commander sweeping her shield, lifting her foot and stamping down while planting the axe shaft. The final collectible deliberately preserves the enchantress in front with a larger commander silhouette behind her. The scholarly background is shown after the performance; reduced-motion mode presents a static dual portrait and optional audio. Existing chapter IDs, seals and saved progress are unchanged.
 
-New artwork: assets/daji-illusion.png, assets/daji-command-states.png, assets/daji-dual-seal.png. Generated with the built-in image_gen tool; prompts are in credits/daji-image-prompts.md.
+New artwork: assets/daji-illusion.png, assets/daji-command-states.png, assets/daji-shadow-seal.png. Generated with the built-in image_gen tool; prompts are in credits/daji-image-prompts.md.

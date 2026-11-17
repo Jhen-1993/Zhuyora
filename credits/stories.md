@@ -91,9 +91,9 @@ Based on the National Palace Museum’s introduction to the local legend underly
 
 分類：中國古典神魔小說 / Chinese classical fantasy novel
 
-依《封神演義》第四回蘇護帶女進朝、恩州驛狐妖侵身的小說情節，加入原創閱讀討論。明確區分蘇妲己與小說中的狐妖，不把小說對女性的描寫當成歷史事實。本篇不含原著酷刑細節。 收藏圖並列小說妖姬與學術推論啟發的女將重塑，呈現同一人物的不同敘事。
+依《封神演義》第四回蘇護帶女進朝、恩州驛狐妖侵身的小說情節，加入原創閱讀討論。明確區分蘇妲己與小說中的狐妖，不把小說對女性的描寫當成歷史事實。本篇不含原著酷刑細節。 收藏圖以前景小說妖姬與身後的將軍黑影，表現學術推論啟發的女將重塑，呈現同一人物的不同敘事。
 
-Based on chapter 4: Su Hu brings his daughter to court and a fox spirit takes over her body at Enzhou. Original reading reflections are added. Su Daji and the fictional spirit are distinguished; the novel’s portrayal of women is not treated as history. Torture details are omitted. The collectible pairs the fictional enchantress with a scholarly-inspired commander, showing two different narratives about Daji.
+Based on chapter 4: Su Hu brings his daughter to court and a fox spirit takes over her body at Enzhou. Original reading reflections are added. Su Daji and the fictional spirit are distinguished; the novel’s portrayal of women is not treated as history. Torture details are omitted. The collectible places the fictional enchantress before a scholarly-inspired commander silhouette, showing two different narratives about Daji.
 
 - [閱讀參考來源](https://zh.wikisource.org/wiki/封神演義/卷004)
 - [將軍妲己的研究背景](https://research.sinica.edu.tw/ancient-china-shang-woman-daji/)
